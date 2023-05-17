@@ -1,3 +1,30 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+
+.flex-container {
+    display: flex;
+    
+    justify-content: space-between; 
+    align-items: stretch; 
+    /* flex-flow: row nowrap; */ 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: stretch;
+
+    width: calc( 100% + 1rem );
+    margin-left: -.5rem;
+}
+
+.flex-item {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 50%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+	margin: 0 .5rem;
+}
